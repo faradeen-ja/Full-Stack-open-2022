@@ -8,6 +8,6 @@
 * d A more complex state, debugging React apps
 
 
-*[Go to Part 1](https://fullstackopen.com/en/part1/introduction_to_react)*
+*Go to[ Part 1](https://fullstackopen.com/en/part1/introduction_to_react)*
 
 *Course owned & provided by Full Stack open- Open University* 
