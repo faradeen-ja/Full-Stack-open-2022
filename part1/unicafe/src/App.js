@@ -5,7 +5,7 @@ import { Statistics } from "./components/Statistics";
 import { Title } from "./components/Title";
 
 const App = () => {
-  // save clicks of each button to own state
+  // buttons state 
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
