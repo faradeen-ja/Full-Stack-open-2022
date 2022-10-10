@@ -26,14 +26,19 @@ const App = () => {
   const timer = 3000
 
   useEffect(() => {
-    Service.getAll().then(data => setPersons(data))
+    Service
+      .getAll()
+      .then(data => setPersons(data))
   }, [])
 
 
   const handleSubmit = (event) => {
-    event.preventDefault()
+    event
+      .preventDefault()
 
-    Service.query(newName).then(person => {
+    Service
+      .query(newName)
+      .then(person => {
       const newObject = {
         'name': newName,
         'number': newNumber,
@@ -42,8 +47,12 @@ const App = () => {
       if (person) {
         const message = `${newName} is already added to phonebook, replace the old number with a new one?`
         if (window.confirm(message)) {
-          Service.update(person.id, newObject).then(() => {
-            Service.getAll().then(data => setPersons(data))
+          Service
+            .update(person.id, newObject)
+            .then(() => {
+          Service
+            .getAll()
+            .then(data => setPersons(data))
             setMessage(`Added ${newName}`)
             setTimeout(() => setMessage(null), timer)
           }).catch(error => {
@@ -52,8 +61,10 @@ const App = () => {
           })
         }
       } else {
-        Service.create(newObject).then(() => {
-          Service.getAll().then(data => setPersons(data))
+        Service
+          .create(newObject).then(() => {
+        Service
+          .getAll().then(data => setPersons(data))
           setNewName('')
           setMessage(`Added ${newName}`)
           setTimeout(() => setMessage(null), timer)
