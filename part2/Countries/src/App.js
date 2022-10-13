@@ -18,7 +18,9 @@ const App = () => {
 
     const findCountries = (event) => {
         setInput(event.target.value)
-        const searchCountries = countries.filter((country) => country.name.toUpperCase().includes(event.target.value.toUpperCase()) === true)
+        const searchCountries = countries.filter((country) => country.name
+        .toUpperCase().includes(event.target.value
+        .toUpperCase()) === true)
         setSearchCountries(searchCountries)
         
     }
