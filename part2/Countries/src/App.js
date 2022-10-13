@@ -11,7 +11,8 @@ const App = () => {
 
     const hook = () =>{
         axios
-        .get("https://restcountries.com/v3.1/all").then((Response) => setCountries(Response.data))
+        .get("https://restcountries.com/v3.1/all")
+        .then((Response) => setCountries(Response.data))
     }
     useEffect(hook, [])
 
