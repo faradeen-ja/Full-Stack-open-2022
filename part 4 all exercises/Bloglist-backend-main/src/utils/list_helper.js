@@ -21,9 +21,12 @@ const favoriteBlog = (blogs) => {
 }
 
 const mostBlogsAuthor = (blogs) => {
-  const authorWithBlogNumber = lodash.countBy(blogs, 'author')
+  const authorWithBlogNumber = lodash
+  .countBy(blogs, 'author')
   const maxValue = Math.max(...Object.values(authorWithBlogNumber))
-  const maxIndex = Object.keys(authorWithBlogNumber).find(key => authorWithBlogNumber[key] === maxValue)
+  const maxIndex = Object
+  .keys(authorWithBlogNumber)
+  .find(key => authorWithBlogNumber[key] === maxValue)
 
   return {
     "author": maxIndex,
