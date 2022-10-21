@@ -1,0 +1,9 @@
+PUT http://localhost:3001/api/blogs/63524899fd211a2aec810b75
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhcmFqYW1pIiwiaWQiOiI2MzUyM2E2ZTUzMDE3NjNlZDhiZGQzMjYiLCJpYXQiOjE2NjYzMzM4MTl9.72qUZbPJ0PXB2h8JrIV6ufEAEdteDN-pmsvpseR7mws
+
+{
+    "comments": "adding comment via PUT using auth token",
+    
+}
+

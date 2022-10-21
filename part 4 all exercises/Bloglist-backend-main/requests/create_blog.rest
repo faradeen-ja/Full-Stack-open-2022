@@ -1,0 +1,12 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhcmFqYW1pIiwiaWQiOiI2MzUyM2E2ZTUzMDE3NjNlZDhiZGQzMjYiLCJpYXQiOjE2NjYzMzM4MTl9.72qUZbPJ0PXB2h8JrIV6ufEAEdteDN-pmsvpseR7mws
+
+
+{
+    
+    "title": "songs",
+    "author": "selena gomez",
+    "url": "https://selenag.com",
+    "content": "this is a new bloglist post"
+}

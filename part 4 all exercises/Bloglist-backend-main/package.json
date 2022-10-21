@@ -1,0 +1,37 @@
+{
+  "name": "bloglist-backend",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node ./src/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/index.js",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --forceExit",
+    "start:test": "cross-env NODE_ENV=test node ./src/index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "cores": "^0.8.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.13.15",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "cross-env": "^7.0.3",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
